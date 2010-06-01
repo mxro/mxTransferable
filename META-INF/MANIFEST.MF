@@ -9,3 +9,4 @@ Import-Package: org.jdesktop.application,
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-ClassPath: src/main/resources/bsaf-1.9RC4-project.jar,
  .
+Export-Package: de.mxro.transferable
