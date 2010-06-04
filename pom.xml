@@ -37,7 +37,7 @@
   	<dependency>
   		<groupId>de.mxro.thrd.swingapplicationframework</groupId>
   		<artifactId>thrdSwingApplicationFramework</artifactId>
-  		<version>[1.03,)</version>
+  		<version>[1.03.0,)</version>
   		<optional>false</optional>
   	</dependency>
   </dependencies>
