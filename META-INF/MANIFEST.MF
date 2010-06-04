@@ -3,9 +3,9 @@ Bundle-ManifestVersion: 2
 Bundle-Name: mxTransferable
 Bundle-SymbolicName: de.mxro.transferable
 Bundle-Version: 0.0.2
-Import-Package: org.jdesktop.application,
+Import-Package: de.mxro.utils,
+ org.jdesktop.application,
  org.osgi.framework;version="1.3.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Bundle-ClassPath: src/main/resources/bsaf-1.9RC4-project.jar,
- .
+Bundle-ClassPath: .
 Export-Package: de.mxro.transferable
