@@ -31,14 +31,11 @@ public class LocalFileHandler implements FileHandler {
         OutputStream is = null;
         try {
             String tempName = "temp"+new Date().getTime() + "." + Utils.getExtension(file.getAbsolutePath());
-            try {
-                while (!(storage.load(tempName) == null)) {
+            
+                while (new java.io.File(storage.getDirectory().getAbsolutePath()+"/"+tempName).exists()) {
                     tempName = "temp"+new Date().getTime() + "." + Utils.getExtension(file.getAbsolutePath());
                 }
-            } catch (IOException ex) {
-                Logger.getLogger(LocalFileHandler.class.getName()).log(Level.SEVERE, null, ex);
-                return null;
-            }
+            
             java.io.File newFile = new java.io.File(storage.getDirectory().getAbsolutePath()+"/"+tempName);
             newFile.createNewFile();
             Logger.getLogger(LocalFileHandler.class.getName()).log(Level.INFO, "Attempting to create file ''{0}''", newFile);
