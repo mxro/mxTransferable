@@ -8,7 +8,7 @@ Bundle-Version: 0.0.3.SNAPSHOT
 Tool: Bnd-0.0.357
 Bundle-Name: Unnamed - de.mxro.transferable:mxTransferable:bundle:0.0.
  3-SNAPSHOT
-Bnd-LastModified: 1277785536081
+Bnd-LastModified: 1277791241839
 Created-By: Apache Maven Bundle Plugin
 Bundle-ManifestVersion: 2
 Bundle-SymbolicName: mxTransferable
