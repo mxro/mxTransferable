@@ -5,6 +5,22 @@
   <version>0.0.3-SNAPSHOT</version>
   <packaging>bundle</packaging>
   
+  
+   <dependencies>
+  	<dependency>
+  		<groupId>de.mxro.utils</groupId>
+  		<artifactId>mxUtilities</artifactId>
+  		<version>[0.0.1,)</version>
+  		<optional>false</optional>
+  	</dependency>
+  	<dependency>
+  		<groupId>de.mxro.thrd.swingapplicationframework</groupId>
+  		<artifactId>thrdSwingApplicationFramework</artifactId>
+  		<version>1.03.3</version>
+  		<optional>false</optional>
+  	</dependency>
+  </dependencies>
+  
   <build>
   	<!-- Resources -->
     <resources>
@@ -56,9 +72,10 @@
 					<instructions>
 						<Bundle-SymbolicName>${pom.artifactId}</Bundle-SymbolicName>
 						<Bundle-Version>${pom.version}</Bundle-Version>
-						<Embed-Dependency>*;scope=compile|runtime;inline=false
+						<!--  <Embed-Dependency>*;scope=compile|runtime;inline=false
 						</Embed-Dependency>
-						<Embed-Directory>target/dependency</Embed-Directory>
+						<Embed-Directory>target/dependency</Embed-Directory> -->
+						<Import-Package>*</Import-Package>
 						<Export-Package>de.mxro.transferable</Export-Package>
 						<!-- This statement can change the bundle classpath 
 						   <Bundle-ClassPath>.</Bundle-ClassPath> 
@@ -124,6 +141,28 @@
         </configuration>
       </plugin>
       
+      <!--
+				Keep the MANIFEST.MF used by eclipse in sync with the MANIFEST.MF
+				created by the maven bundle plugin
+			-->
+			<plugin>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+							<tasks>
+								<delete file="${basedir}/META-INF/MANIFEST.MF" />
+								<copy file="target/classes/META-INF/MANIFEST.MF" tofile="${basedir}/META-INF/MANIFEST.MF" />
+							</tasks>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+      
       <!--  <plugin>
       	<groupId>org.apache.maven.plugins</groupId>
       	<artifactId>maven-jar-plugin</artifactId>
@@ -138,20 +177,7 @@
   </build>
   
   
-  <dependencies>
-  	<dependency>
-  		<groupId>de.mxro.utils</groupId>
-  		<artifactId>mxUtilities</artifactId>
-  		<version>[0.0.1,)</version>
-  		<optional>false</optional>
-  	</dependency>
-  	<dependency>
-  		<groupId>de.mxro.thrd.swingapplicationframework</groupId>
-  		<artifactId>thrdSwingApplicationFramework</artifactId>
-  		<version>1.03.3-SNAPSHOT</version>
-  		<optional>false</optional>
-  	</dependency>
-  </dependencies>
+ 
   
   
   <distributionManagement>
