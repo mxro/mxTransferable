@@ -1,8 +1,13 @@
 Manifest-Version: 1.0
-Export-Package: de.mxro.transferable;uses:="de.mxro.utils.log,javax.sw
- ing.text.html,javax.swing.text,de.mxro.string.filter,javax.swing,org.
- jdesktop.application,de.mxro.utils",net.iharder.dnd;uses:="javax.swin
- g.border,javax.swing"
+Export-Package: de.mxro.transferable;
+  uses:="de.mxro.utils.log,
+   javax.swing.text.html,
+   javax.swing.text,
+   de.mxro.string.filter,
+   javax.swing,
+   org.jdesktop.application,
+   de.mxro.utils",
+ net.iharder.dnd;uses:="javax.swing.border,javax.swing"
 Built-By: mx
 Build-Jdk: 1.6.0_20
 Bundle-Version: 0.0.3.SNAPSHOT
