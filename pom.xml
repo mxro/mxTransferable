@@ -76,7 +76,7 @@
 						</Embed-Dependency>
 						<Embed-Directory>target/dependency</Embed-Directory> -->
 						<Import-Package>*</Import-Package>
-						<Export-Package>de.mxro.transferable</Export-Package>
+						<Export-Package>de.mxro.transferable,net.iharder.dnd</Export-Package>
 						<!-- This statement can change the bundle classpath 
 						   <Bundle-ClassPath>.</Bundle-ClassPath> 
 						-->
