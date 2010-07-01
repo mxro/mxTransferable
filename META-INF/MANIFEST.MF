@@ -13,7 +13,14 @@ Bnd-LastModified: 1277944242746
 Created-By: Apache Maven Bundle Plugin
 Bundle-ManifestVersion: 2
 Bundle-SymbolicName: mxTransferable
-Import-Package: de.mxro.string.filter,de.mxro.transferable,de.mxro.uti
- ls,de.mxro.utils.log,javax.swing,javax.swing.border,javax.swing.text,
- javax.swing.text.html,net.iharder.dnd,org.jdesktop.application
+Import-Package: de.mxro.string.filter,
+ de.mxro.transferable,
+ de.mxro.utils,
+ de.mxro.utils.log,
+ javax.swing,
+ javax.swing.border,
+ javax.swing.text,
+ javax.swing.text.html,
+ net.iharder.dnd,
+ org.jdesktop.application
 
