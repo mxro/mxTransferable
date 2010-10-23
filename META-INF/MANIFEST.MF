@@ -1,31 +1,18 @@
 Manifest-Version: 1.0
-Export-Package: de.mxro.transferable;
-  uses:="de.mxro.utils.log,
-   javax.swing.text.html,
-   javax.swing.text,
-   de.mxro.string.filter,
-   javax.swing,
-   org.jdesktop.application,
-   de.mxro.utils",
- net.iharder.dnd;uses:="javax.swing.border,javax.swing"
-Built-By: mx
-Build-Jdk: 1.6.0_20
+Export-Package: de.mxro.transferable;uses:="de.mxro.utils.log,javax.sw
+ ing.text.html,javax.swing.text,de.mxro.string.filter,javax.swing,org.
+ jdesktop.application,de.mxro.utils",net.iharder.dnd;uses:="javax.swin
+ g.border,javax.swing"
+Built-By: Max
+Build-Jdk: 1.6.0_22
 Bundle-Version: 0.0.3.SNAPSHOT
 Tool: Bnd-0.0.357
-Bundle-Name: Unnamed - de.mxro.transferable:mxTransferable:bundle:0.0.
- 3-SNAPSHOT
-Bnd-LastModified: 1277944242746
+Bundle-Name: mxTransferable
+Bnd-LastModified: 1287778351358
 Created-By: Apache Maven Bundle Plugin
 Bundle-ManifestVersion: 2
 Bundle-SymbolicName: mxTransferable
-Import-Package: de.mxro.string.filter,
- de.mxro.transferable,
- de.mxro.utils,
- de.mxro.utils.log,
- javax.swing,
- javax.swing.border,
- javax.swing.text,
- javax.swing.text.html,
- net.iharder.dnd,
- org.jdesktop.application
+Import-Package: de.mxro.string.filter,de.mxro.transferable,de.mxro.uti
+ ls,de.mxro.utils.log,javax.swing,javax.swing.border,javax.swing.text,
+ javax.swing.text.html,net.iharder.dnd,org.jdesktop.application
 

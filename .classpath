@@ -5,11 +5,7 @@
   <classpathentry kind="output" path="target/classes"/>
   <classpathentry kind="lib" path="beansbinding-1.2.1.jar"/>
   <classpathentry kind="lib" path="javaws-1.0.jar"/>
-  <classpathentry kind="lib" path="swing-worker-1.1.jar" sourcepath="/Users/mx/.m2/repository/org/swinglabs/swing-worker/1.1/swing-worker-1.1-sources.jar">
-    <attributes>
-      <attribute value="jar:file:/Users/mx/.m2/repository/org/swinglabs/swing-worker/1.1/swing-worker-1.1-javadoc.jar!/" name="javadoc_location"/>
-    </attributes>
-  </classpathentry>
+  <classpathentry kind="lib" path="swing-worker-1.1.jar"/>
   <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
   <classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
 </classpath>

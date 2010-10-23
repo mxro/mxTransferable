@@ -29,17 +29,17 @@
 		<link>
 			<name>beansbinding-1.2.1.jar</name>
 			<type>1</type>
-			<location>/Users/mx/.m2/repository/org/jdesktop/beansbinding/1.2.1/beansbinding-1.2.1.jar</location>
+			<location>C:/Users/Max/.m2/repository/org/jdesktop/beansbinding/1.2.1/beansbinding-1.2.1.jar</location>
 		</link>
 		<link>
 			<name>javaws-1.0.jar</name>
 			<type>1</type>
-			<location>/Users/mx/.m2/repository/com/sun/javaws/1.0/javaws-1.0.jar</location>
+			<location>C:/Users/Max/.m2/repository/com/sun/javaws/1.0/javaws-1.0.jar</location>
 		</link>
 		<link>
 			<name>swing-worker-1.1.jar</name>
 			<type>1</type>
-			<location>/Users/mx/.m2/repository/org/swinglabs/swing-worker/1.1/swing-worker-1.1.jar</location>
+			<location>C:/Users/Max/.m2/repository/org/swinglabs/swing-worker/1.1/swing-worker-1.1.jar</location>
 		</link>
 	</linkedResources>
 </projectDescription>
