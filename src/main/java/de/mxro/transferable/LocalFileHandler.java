@@ -16,6 +16,9 @@ import java.io.OutputStream;
 import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import mx.gwtutils.MxroGWTUtils;
+
 import org.jdesktop.application.LocalStorage;
 
 /**
@@ -30,10 +33,10 @@ public class LocalFileHandler implements FileHandler {
     public String uploadFile(File file) {
         OutputStream is = null;
         try {
-            String tempName = "temp"+new Date().getTime() + "." + Utils.getExtension(file.getAbsolutePath());
+            String tempName = "temp"+new Date().getTime() + "." + MxroGWTUtils.getExtension(file.getAbsolutePath());
             
                 while (new java.io.File(storage.getDirectory().getAbsolutePath()+"/"+tempName).exists()) {
-                    tempName = "temp"+new Date().getTime() + "." + Utils.getExtension(file.getAbsolutePath());
+                    tempName = "temp"+new Date().getTime() + "." + MxroGWTUtils.getExtension(file.getAbsolutePath());
                 }
             
             java.io.File newFile = new java.io.File(storage.getDirectory().getAbsolutePath()+"/"+tempName);
@@ -72,7 +75,7 @@ public class LocalFileHandler implements FileHandler {
 
     @Override
     public boolean canHandle(File file) {
-        String extension = Utils.getExtension(file.getAbsolutePath());
+        String extension = MxroGWTUtils.getExtension(file.getAbsolutePath());
 		return extension.equals("png") ||
 		       extension.equals("jpg") ||
 		       extension.equals("jpeg") ||
