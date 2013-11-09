@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1383969532861
+Bnd-LastModified: 1383969977946
 Build-Jdk: 1.7.0_25
 Built-By: adminuser
 Bundle-ManifestVersion: 2
